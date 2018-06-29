@@ -1,0 +1,218 @@
+
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+}
+
+body {
+  background-image: url(../imagenes.front1.jpg);
+  width: 100%;
+  height:100vh;
+  position: absolute;
+  top:0px;
+  left:;
+}
+
+header {
+background:#acfcd9;
+opacity: 0.3;
+padding:20px; 
+}
+
+
+header h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  color: #254441;
+  display:inline-block
+}
+
+header nav{
+  float:right;
+}
+
+header nav ul li{
+  list-style: none;
+  display:inline-block;
+  margin:0 10px;
+}
+
+header nav ul li a{
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  color:#254441;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+header nav .menu li {
+  display:inline-block;
+}
+
+header nav .menu li a {
+  text-decoration: none;
+  list-style: none;
+  color:#254441;
+  font-weight: bold;
+}
+
+.home{
+  background: cover;
+  position:absolute;
+
+}
+
+div img {
+ float:left;
+}
+
+.next {
+  text-align:left;
+  background:#b2b09b; 
+  padding: 5px;
+  border:10px;
+  margin:10px;   
+}
+
+fieldset {
+  font-family: 'Raleway', sans-serif;
+  box-shadow: 0 0 10px #999;
+  border-radius: 8px;
+  border-style: none;
+  padding: 10px;    
+  border: 5px ;
+  margin:10px;
+  box-sizing: border-box;
+  color:grey;
+  font-size: 0.9rem;
+  text-align: center;
+  display:inline-block;
+  position:absolute;
+  bottom:10px;
+  right:30px; 
+}
+
+fieldset span{  
+  font-family: 'Raleway', sans-serif;
+  color:grey;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 10px;    
+  border: 10px ;
+  margin:10px;
+}
+
+.icon-bar  {
+  position:absolute;
+  right:20px;
+  bottom:120px;
+}
+
+.icon-bar ul li  { 
+  
+  list-style: none;
+  text-decoration:none;
+}
+
+.icon-bar ul li a {
+   font-size:1.8rem;
+   color:#001242;
+   padding:10px;    
+   border: 20px;
+   margin:10px;
+}
+
+.about {
+  width:40vw;
+  padding:20px;
+  border:40px;
+  margin-left: 100px;
+  position: ;
+  border:auto;
+}
+
+.about p{
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  color:grey;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;    
+  border: 20px ;
+  margin:20px;
+  line-height: 20px;
+}
+
+.fond {
+  background: white;
+  width:80vw;
+  padding:10px;
+  border:20px auto;
+  margin: 20px auto;
+}
+
+.disc {
+   display:inline-block;
+ } 
+   
+.disc li{
+  list-style:none;
+  float:left; 
+  transform: scale(2); 
+  padding:50px;
+  border:50px;
+  margin:40px; 
+  }
+
+.contact{
+  list-style:none;
+  font-weight:bold;
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  padding:50px;
+  border:50px;
+  margin:40px; 
+  line-height: 2rem;
+}
+
+.contact span{
+  color:grey;
+}
+
+
+/*
+
+  color: white;
+  overflow:hidden;
+  display: inline;
+  float: left, bottom,
+  font-size: 30px;
+  padding:10px;
+ }
+
+
+/** COLORES!!  
+
+blue magenta violet: #4f359b;
+gris #343434
+
+Jelly Bean db504a fucsoide
+azul #001242
+Japanese Indigo #254441
+Zomp #43aa8b
+Laurel Green #b2b09b
+bittersweet #ff715b acoralado 
+
+VERDE #a1e8af
+AMARILLO #fed766
+SLATE GRAY #747c92
+
+NYANZA #e5ffde  suave
+
+periwinkle #d1d2f9 lila
+Tuscan #fbd1a2 curuba
+Paris green #45cb85
+Light gray #d0e1d4
+**/
