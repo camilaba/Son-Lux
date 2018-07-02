@@ -5,37 +5,32 @@
    box-sizing: border-box;
 }
 
-body {
-  background-image: url(../imagenes.front1.jpg);
-  width: 100%;
-  height:100vh;
-  position: absolute;
-  top:0px;
-  left:;
-}
-
 header {
-background:#acfcd9;
-opacity: 0.3;
-padding:20px; 
+  background:#acfcd9;
+  opacity: 0.3;
+  padding:20px; 
+  position: fixed;
+  top:0;
+  width: 100%;
+  z-index: 1;
 }
-
 
 header h1 {
   font-family: 'Raleway', sans-serif;
   font-size: 1.5rem;
   color: #254441;
-  display:inline-block
+  display:inline-block;
 }
 
 header nav{
   float:right;
-}
+  }
 
 header nav ul li{
   list-style: none;
   display:inline-block;
   margin:0 10px;
+  position: relative;
 }
 
 header nav ul li a{
@@ -43,28 +38,31 @@ header nav ul li a{
   font-family: 'Raleway', sans-serif;
   color:#254441;
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-weight: bold;
+  font-size: 0.9;
 }
 
 header nav .menu li {
-  display:inline-block;
-}
-
-header nav .menu li a {
-  text-decoration: none;
-  list-style: none;
-  color:#254441;
-  font-weight: bold;
-}
-
-.home{
-  background: cover;
-  position:absolute;
+  position: relative;
 
 }
 
-div img {
- float:left;
+header nav .menu li:hoover .submenu{
+display: block;  
+}
+
+header nav .menu li .submenu {
+  background:#254441;
+  position: absolute;
+  left: -35%
+  width:220%;
+  padding:10px;
+
+  display: none;
+}
+
+header nav .menu li .submenu li{
+display: block;
 }
 
 .next {
@@ -81,7 +79,7 @@ fieldset {
   border-radius: 8px;
   border-style: none;
   padding: 10px;    
-  border: 5px ;
+  border: 10px ;
   margin:10px;
   box-sizing: border-box;
   color:grey;
@@ -90,7 +88,7 @@ fieldset {
   display:inline-block;
   position:absolute;
   bottom:10px;
-  right:30px; 
+  right:100px; 
 }
 
 fieldset span{  
@@ -104,7 +102,7 @@ fieldset span{
 }
 
 .icon-bar  {
-  position:absolute;
+  position:fixed;
   right:20px;
   bottom:120px;
 }
@@ -116,55 +114,153 @@ fieldset span{
 }
 
 .icon-bar ul li a {
-   font-size:1.8rem;
-   color:#001242;
-   padding:10px;    
-   border: 20px;
-   margin:10px;
+  font-size:1.8rem;
+  color: #4f359b;
+  padding:10px;    
+  border: 20px;
+  margin:10px;
 }
 
-.about {
-  width:40vw;
-  padding:20px;
-  border:40px;
-  margin-left: 100px;
-  position: ;
-  border:auto;
+ #Home{
+  background-image: url("../imagenes/front1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
 }
 
-.about p{
+#About{
+  height:100vh;
+  padding:50px;
+  border:200px;
+  margin:100px;
   font-family: 'Raleway', sans-serif;
-  text-transform: uppercase;
-  color:grey;
-  font-size: 0.8rem;
-  font-weight: bold;
-  text-align: center;
-  padding: 10px;    
-  border: 20px ;
-  margin:20px;
+   color:grey;
+}
+
+ #gen p{
+  padding: 10px 30px;    
+  border:10px 20px 10px 50px;
+  margin:10px 20px 10px 50px;
   line-height: 20px;
 }
 
-.fond {
-  background: white;
-  width:80vw;
-  padding:10px;
-  border:20px auto;
-  margin: 20px auto;
+#memb { 
+  width:90%;
+  font-family: 'Raleway', sans-serif;
+  padding: 20px;    
+  border: 20px;
+  margin:20px;
+  height: auto;
+  display: inline-block;
+  float: left;
+  color:grey;
 }
 
-.disc {
-   display:inline-block;
- } 
-   
-.disc li{
-  list-style:none;
-  float:left; 
-  transform: scale(2); 
+#memb img{
+  display: inline-block; 
+  float: left; 
+  padding: 10px;    
+  border:10px auto;
+  margin:10px;
+  border-left: 
+  transform: scale(.7);
+}
+
+#memb span{
+  font-weight: bold;
+}
+#memb p{
+  font-family: 'Raleway', sans-serif;
+   font-size: 1rem;
+}
+
+ #rl{
+  width: 55%;
+  display:inline-block;
+  float:left;
+  padding: 10px;    
+  border:  30px;
+  margin: 30px;
+}
+
+#rb{
+  width: 55%;
+  display:inline-block;
+  float:left;
+  padding:10px;    
+  border:30px;
+  margin:30px;
+}
+
+#ic{
+  width: 55%;
+  display:inline-block;
+  float:left;
+  padding:10px;    
+  border:30px;
+  margin:30px;
+}
+
+#News {
+  height:100vh;
+  width:80%;
   padding:50px;
-  border:50px;
-  margin:40px; 
+  border:200px;
+  margin:100px;
+  background-color: #fcf0cc;
+  font-family: 'Raleway', sans-serif;
+  overflow: auto;
+}
+
+  #disc {
+  width:80%;
+  height: 100vh;
+  background:white;
+  padding:20px;
+  border:30px;
+  margin: 30px auto;
+  border:auto;
+} 
+
+#album {
+  float: left;
+}
+   
+#album  img {
+  padding: 50px;  
+  border: 50px;
+  border-color: black;
+  margin:60px;
+  list-style:none;
+  float:left;  
+  transform: scale(2);
+  display: inline-block;
   }
+
+section ol{
+  padding: 10px;
+  border:20px 20px 20px 50px;
+  margin: 10px;
+}
+
+#album p {
+  font-family: 'Raleway', sans-serif;
+  color:grey;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 1px; 
+}
+ 
+section ol li {
+  font-family: 'Raleway', sans-serif;
+  color:grey;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 1px;    
+} 
 
 .contact{
   list-style:none;
@@ -172,8 +268,8 @@ fieldset span{
   display: inline-block;
   font-family: 'Raleway', sans-serif;
   padding:50px;
-  border:50px;
-  margin:40px; 
+  border:200px;
+  margin:100px; 
   line-height: 2rem;
 }
 
@@ -213,6 +309,6 @@ NYANZA #e5ffde  suave
 
 periwinkle #d1d2f9 lila
 Tuscan #fbd1a2 curuba
-Paris green #45cb85
+Paris green 
 Light gray #d0e1d4
 **/
