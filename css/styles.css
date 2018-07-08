@@ -5,6 +5,8 @@
    box-sizing: border-box;
 }
 
+
+
 header {
   background:#acfcd9;
   opacity: 0.3;
@@ -29,41 +31,35 @@ header nav{
 header nav ul li{
   list-style: none;
   display:inline-block;
-  margin:0 10px;
+  margin:0px, 10px;
   position: relative;
 }
 
+
 header nav ul li a{
-  text-decoration: none;
   font-family: 'Raleway', sans-serif;
   color:#254441;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 0.9;
+  padding: 5px;
+  text-decoration: none;
+  transition: all 1s;
 }
 
-header nav .menu li {
-  position: relative;
 
+header nav ul li a:hover{
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9;
+  padding: 5px;
+  text-decoration: none;
+  transform: scale(2);
+  color: white;
+  background: #4f359b;
 }
 
-header nav .menu li:hoover .submenu{
-display: block;  
-}
-
-header nav .menu li .submenu {
-  background:#254441;
-  position: absolute;
-  left: -35%
-  width:220%;
-  padding:10px;
-
-  display: none;
-}
-
-header nav .menu li .submenu li{
-display: block;
-}
 
 .next {
   text-align:left;
@@ -93,7 +89,7 @@ fieldset {
 
 fieldset span{  
   font-family: 'Raleway', sans-serif;
-  color:grey;
+  color:transparent;
   font-size: 0.9rem;
   text-align: center;
   padding: 10px;    
@@ -101,10 +97,12 @@ fieldset span{
   margin:10px;
 }
 
+
+
 .icon-bar  {
   position:fixed;
-  right:20px;
-  bottom:120px;
+  right:5px;
+  bottom:200px;
 }
 
 .icon-bar ul li  { 
@@ -114,16 +112,26 @@ fieldset span{
 }
 
 .icon-bar ul li a {
+  color:#acfcd9;
   font-size:1.8rem;
-  color: #4f359b;
+  padding:10px;    
+  border: 0px;
+  margin:10px;
+  transition: all ease-in-out;
+}
+
+.icon-bar ul li a:hover{
   padding:10px;    
   border: 20px;
   margin:10px;
-}
+  transform: scale(1);
+  color: #4f359b;
+ }
 
  #Home{
-  background-image: url("../imagenes/front1.jpg");
+  background-image: url("../imagenes/front2.jpeg");
   background-size: cover;
+  border: auto;
   background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
@@ -132,19 +140,28 @@ fieldset span{
 
 #About{
   height:100vh;
-  padding:50px;
-  border:200px;
-  margin:100px;
+  padding:100px 50px;
+  border:10px 200px;
+  margin:15px 200px;
   font-family: 'Raleway', sans-serif;
-   color:grey;
+  font-size: 0.8rem;
+  color:grey;
+  
+}
+#gen p{
+  background: transparent;
+  transition: all ease-in-out;
 }
 
- #gen p{
-  padding: 10px 30px;    
-  border:10px 20px 10px 50px;
-  margin:10px 20px 10px 50px;
+ #gen p:hover{
+  padding: 10px; 
+  border:10px;
+  margin:10px;
   line-height: 20px;
+   transform: scale(1.1);
 }
+
+
 
 #memb { 
   width:90%;
@@ -156,24 +173,26 @@ fieldset span{
   display: inline-block;
   float: left;
   color:grey;
+  transform: scale(1.1);
 }
 
 #memb img{
   display: inline-block; 
   float: left; 
   padding: 10px;    
-  border:10px auto;
-  margin:10px;
-  border-left: 
-  transform: scale(.7);
+  border:10px,auto;
+  border-radius: 50%;
+  margin:10px; 
+  transform: scale(.8);
 }
+
 
 #memb span{
   font-weight: bold;
 }
 #memb p{
   font-family: 'Raleway', sans-serif;
-   font-size: 1rem;
+   font-size: 0.8rem;
 }
 
  #rl{
@@ -206,61 +225,92 @@ fieldset span{
 #News {
   height:100vh;
   width:80%;
-  padding:50px;
-  border:200px;
-  margin:100px;
-  background-color: #fcf0cc;
+  padding:100px;
+  border:100px;
+  margin:250px;
   font-family: 'Raleway', sans-serif;
   overflow: auto;
 }
 
-  #disc {
-  width:80%;
-  height: 100vh;
-  background:white;
-  padding:20px;
-  border:30px;
-  margin: 30px auto;
-  border:auto;
-} 
 
-#album {
-  float: left;
-}
+.disc{
+  
+  border: auto;
+  padding: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
    
-#album  img {
-  padding: 50px;  
-  border: 50px;
-  border-color: black;
-  margin:60px;
-  list-style:none;
-  float:left;  
-  transform: scale(2);
-  display: inline-block;
   }
 
-section ol{
-  padding: 10px;
-  border:20px 20px 20px 50px;
+.disc p {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+.br {
+  width: 300px; 
+  color:grey;
+  background:lavender;
+  align-self: flex-start;
+  padding:  20px 20px 20px 40px;
+  border:10px;
   margin: 10px;
 }
 
-#album p {
-  font-family: 'Raleway', sans-serif;
+.st {
+  width: 300px; 
   color:grey;
-  font-weight: bold;
-  font-size: 0.9rem;
-  text-align: center;
-  padding: 1px; 
+  background: lavender;
+  align-self: flex-start;
+  padding:  20px 20px 20px 40px;
+  border:10px;
+  margin: 10px;
+}
+
+.bo {
+  width: 280px; 
+  padding: 20px;
+  color:grey;
+  background: lavender;
+  align-self: flex-start;
+  padding:  20px 20px 20px 40px;;
+  border:10px;
+  margin: 10px;
 }
  
-section ol li {
-  font-family: 'Raleway', sans-serif;
+.la {
+  width: 300px; 
   color:grey;
-  font-size: 0.8rem;
-  text-align: center;
-  padding: 1px;    
-} 
+  background: lavender;
+  align-self: flex-start;
+  padding:  20px 20px 20px 40px;
+  border:10px;
+  margin: 10px;
+}
+
+.we {
+  width: 300px; 
+  color:grey;
+  background: lavender;
+ align-self: flex-start;
+  padding:  20px 20px 20px 40px;
+  border:10px;
+  margin: 10px;
+}
+
+.wa {
+  width: 300px; 
+  color:grey;
+  background: lavender;
+  align-self: flex-start;
+  padding: 20px 20px 20px 40px;
+  border:10px;
+  margin: 10px;
+}
+
+
 
 .contact{
   list-style:none;
